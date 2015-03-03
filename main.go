@@ -13,7 +13,9 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello World")
 
 	files, _ := ioutil.ReadDir(file_path)
-  fmt.Println(files)
+  for _, file := range files {
+    fmt.Println(file)
+  }
 }
 
 func main() {
