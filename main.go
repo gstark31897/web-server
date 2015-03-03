@@ -4,6 +4,7 @@ import (
     "fmt"
     "os"
     "net/http"
+    "io/ioutil"
 )
 
 var file_path string
